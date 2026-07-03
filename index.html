@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Report Card Generator</h1>
+
+    <div class="form">
+
+        <input type="text" id="name" placeholder="Student Name">
+
+        <input type="text" id="roll" placeholder="Roll Number">
+
+        <input type="text" id="class" placeholder="Class">
+
+        <div class="marks">
+
+            <input type="number" id="tamil" placeholder="Tamil">
+
+            <input type="number" id="english" placeholder="English">
+
+            <input type="number" id="maths" placeholder="Maths">
+
+            <input type="number" id="science" placeholder="Science">
+
+            <input type="number" id="social" placeholder="Social">
+
+        </div>
+
+        <div class="buttons">
+
+            <button class="generate" onclick="generateReport()">
+                Generate Report
+            </button>
+
+            <button class="clear" onclick="clearData()">
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="report" class="report">
+
+        <h2>📋 Report Card</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <td id="rName"></td>
+            </tr>
+
+            <tr>
+                <th>Roll No</th>
+                <td id="rRoll"></td>
+            </tr>
+
+            <tr>
+                <th>Class</th>
+                <td id="rClass"></td>
+            </tr>
+
+            <tr>
+                <th>Tamil</th>
+                <td id="rTamil"></td>
+            </tr>
+
+            <tr>
+                <th>English</th>
+                <td id="rEnglish"></td>
+            </tr>
+
+            <tr>
+                <th>Maths</th>
+                <td id="rMaths"></td>
+            </tr>
+
+            <tr>
+                <th>Science</th>
+                <td id="rScience"></td>
+            </tr>
+
+            <tr>
+                <th>Social</th>
+                <td id="rSocial"></td>
+            </tr>
+
+            <tr>
+                <th>Total</th>
+                <td id="rTotal"></td>
+            </tr>
+
+            <tr>
+                <th>Percentage</th>
+                <td id="rPercentage"></td>
+            </tr>
+
+            <tr>
+                <th>Grade</th>
+                <td id="rGrade"></td>
+            </tr>
+
+            <tr>
+                <th>Status</th>
+                <td id="rStatus"></td>
+            </tr>
+
+        </table>
+
+        <h3 id="message"></h3>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
